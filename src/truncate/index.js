@@ -7,8 +7,11 @@
  * @param {string} replacer - the string which will be added to the end
  * @return {string} truncated string
  */
-const truncate = (str, length = 0, replacer = '...') => {
-  /* your logic here...*/
-};
+ const truncate = (str, length = 0, replacer = '...') => {
+   if (str.length < length || str.length == 0 ) {
+     return str;
+
+   return str.slice(0,length).concat(replacer);
+ };
 
 export default truncate;

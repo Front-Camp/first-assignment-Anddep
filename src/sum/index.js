@@ -10,6 +10,15 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
+  if ((isNaN(a)) || (isNaN(b)) || (isFinite(b)) || (isFinite(a)) || (typeof(b)!="number") || (typeof(a)!="number")) {
+    throw "EXP!";
+  }
+   else {
+    return a+b;
+  }
+
+
+
   /* your logic here...*/
 };
 

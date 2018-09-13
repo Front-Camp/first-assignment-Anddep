@@ -9,6 +9,12 @@
  */
 const turnMeBaby = str => {
   /* your logic here...*/
+  if(typeof(str)==="string"){
+    throw "EXP!";
+  }
+  else{
+    str.split("").reverse().join("");
+  return str
 };
 
 export default turnMeBaby;

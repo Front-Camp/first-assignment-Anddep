@@ -8,8 +8,15 @@
  * twoSums([1, 2, 4], 3); // [1, 2]
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
-const twoSums = (arr, base) => {
-  /* your logic here...*/
-};
-
+ const twoSums = (arr, base) => {
+   let result = [];
+   for (var i = 0; i < arr.length; i++) {
+     for (var j = i + 1; j < arr.length; j++) {
+       if (arr[i] + arr[j] === base) {
+         result.push([arr[i], arr[j]]);
+       }
+     }
+   }
+   return result;
+ };
 export default twoSums;

@@ -8,6 +8,9 @@
 */
 const max = arr => {
   /* your logic here...*/
+
+  return Math.max(...arr);
+
 };
 
 export default max;
